@@ -1,0 +1,22 @@
+types of errors:
+	1. SyntaxError
+	2. NameError: var is not defined (name used before value is defined)
+	3. ZeroDivisionError: division by zero
+	4. IndexError: index of list out of range
+
+Handling exceptions:
+	trt:
+		.
+		.
+		.
+	except IndexError:
+		... (Handle IndexError)
+	
+	except (NameError, KeyError):
+		... (Handle multiple errors)
+	
+	except:
+		... (Handle all other exceptions)
+	
+	else:
+		... (Execute if try runs without errors)
