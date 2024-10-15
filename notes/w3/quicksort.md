@@ -102,4 +102,3 @@ def quicksort(L, l, r): # sorts L from l to r
 * Hybrid sort:
     * use divide and conquer for large n (quicksort or merge sort or any other)
     * and switch to insertion sort when n becomes smaller (n < 16 or 32)
-
