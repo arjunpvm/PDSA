@@ -71,6 +71,25 @@ In an adjacency matrix, the size is n<sup>2</sup> regardless of no of edges
 
 so we use adjacency lists which represents all the neighbours for each vertex in a list
 
+```python
+
+def neighbours(AMat, i):
+
+    nbrs = []
+
+    (rows, cols) = AMat.shape
+
+    for j in range(cols):
+
+        if AMat[i,j] == 1:
+
+            nbrs.append(j)
+
+    return(nbrs)
+
+#print(neighbours(A,7))
+```
+
 ![list](./img/3.png)
 
 the best way to represent it in python is through dictionaries
