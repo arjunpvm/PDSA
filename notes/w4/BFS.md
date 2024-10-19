@@ -78,7 +78,7 @@ def BFS(AMat, v):
     visited[v] = True # setting visited True for the first vertex
     q.addq(v)
 
-    while q.isempty():
+    while not q.isempty():
         j = q.delq()
 
         for k in neighbours(Amat, j):
