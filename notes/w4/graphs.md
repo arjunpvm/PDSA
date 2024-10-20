@@ -109,3 +109,12 @@ print(AList)
 
 ```
 
+### connected graphs:
+* A graph is connected if every vertex is reachable from each and every other vertex
+
+![connected graph](./img/5.png)
+
+* a disconnected graph consists of connects components
+    * in the above example 1 0 4 8 9 is a connected component and 2 3 6 10 11 is a connects component
+    * in disconnected graphs no of connected components is more than one
+

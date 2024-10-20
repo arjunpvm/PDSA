@@ -7,37 +7,57 @@ lets take the airplanes graph as an example
 * repeat this process until no neighbours are available
 * here we use a stack to store the vertices
 
+Code for DFS using Adjacency matrix
+
 ```python
 
-s = Stack()
+(visited, parent) = ({}, {})
 
-def DFS_init(AMat, v):
+def DFS_global_init(AMat, v):
     (rows, cols) = AMat.shape
-    (visited, parent) = ({},{})
-    stack = []
 
     for i in range(rows):
         visited[i] = False
         parent[i] = -1
-
-    visited[v] = True
-    parent[v] = 0
-    stack.append(v)
-
-    return DFS(AMat, v)
+    return
 
 
 def DFS(Amat, v):
-    while not s.isempty():
-        j = stack[-1]
+    visited[v] = True
 
-        for k in neighbours(AMat, j):
-            if not visited[k]:
-                visited[k] = True
-                parent[i] = parent[j] + 1
-
-
-
-
+    for k in neigbours(Amat, v):
+        if not visited[k]:
+            parent[k] = v
+            DFS(Amat, k)
+    return
 
 ```
+
+Code for DFS using adjacency list
+
+```python
+
+(visited, parent) = ({}, {})
+
+def DFS_global_init(AList, v):
+    for i AList.keys():
+        visited[i] = False
+        parent[i] = -1
+    return
+
+
+def DFS_List(AList, v):
+    visited[v] = True
+
+    for k in AList[v]:
+        if not visited[k]:
+            parent[k] = v
+            DFS_List(AList, k)
+    return
+
+```
+
+### Complexity of DFS:
+Overall complexity is same as the BFS
+* O(n<sub>2</sub>) for AMat
+* O(m + n) for AList

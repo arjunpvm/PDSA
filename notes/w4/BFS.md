@@ -67,7 +67,7 @@ Repeat the process
 ```python
 
 def BFS(AMat, v):
-    (rows, columns) = AMat.shape
+    (rows, columns) = AMat.shape()
     visited = {}
 
     for i in range(rows):
@@ -96,7 +96,7 @@ G = (V, E)
 
 |E| = m
 
-if G is connected(a garaph where every vertex is connected to every other vertex by a path) then m vary from n-1 to n(n-a)/2
+if G is connected(a garaph where every vertex is connected to every other vertex by a path) then m vary from n-1 to n(n-1)/2
 
 #### visiting a vertex
 in BFS each reachable vertex is processed exactly once
