@@ -115,6 +115,14 @@ print(AList)
 ![connected graph](./img/5.png)
 
 * a disconnected graph consists of connects components
-    * in the above example 1 0 4 8 9 is a connected component and 2 3 6 10 11 is a connects component
+    * in the above example 1 - 0 - 4 - 8 - 9 is a connected component and 2 - 3 - 6 - 10 - 11 is a connects component
     * in disconnected graphs no of connected components is more than one
+
+### cyclic graphs:
+* a cycle is a path that starts and ends in the same vertex
+    * 4 - 8 - 9 is a cycle
+* cycles can repeat a vertex 2 - 3 - 7 - 10 - 6 - 7 - 2
+* but edges should not be repeated 2 - 4 - 2
+* simple cycle is a cycle when the only repeated vertices are the first vertex 4 - 8 - 9
+* A graph is acyclic if there is no cycle
 

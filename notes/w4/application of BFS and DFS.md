@@ -24,3 +24,27 @@ BFS and DFS both systematically compute reachability of a vertex
     * assign each visited node component number 0
 * repeat until all vertices are visited
 
+```python
+def components(AList):
+    component = {}
+    for i in AList.keys():
+        component[i] = -1
+
+    (compid, seen) = (0, 0)
+
+    while seen <= max(AList):
+        startv = min([i for i in AList.keys() if component[i] = -1])
+        visited = BFS(AList, startv)
+
+        for i in visited.keys():
+            if visited[i]:
+                seen = seen + 1
+                component[i] = compid
+            compid = compid + 1
+
+    return component
+```
+
+### finding cycles in a graph:
+
+
