@@ -126,3 +126,5 @@ print(AList)
 * simple cycle is a cycle when the only repeated vertices are the first vertex 4 - 8 - 9
 * A graph is acyclic if there is no cycle
 
+### **D**irected **A**cyclic **G**raphs(DAGa):
+* 

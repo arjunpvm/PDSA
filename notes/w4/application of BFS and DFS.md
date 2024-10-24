@@ -46,5 +46,5 @@ def components(AList):
 ```
 
 ### finding cycles in a graph:
-
+[[graphs#cyclic graphs:|cyclic graphs]]
 
