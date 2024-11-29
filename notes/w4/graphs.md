@@ -13,7 +13,7 @@
 * let |V| = n when V = {0, 1, 2, ..., n-1}
 * edges are now pairs (i, j) where 0 < i, j < n
     * usually assume i != j  so there is no self loops
-* rows and columns numberes {0, 1, 2, ..., n-1}
+* rows and columns numbers {0, 1, 2, ..., n-1}
 * A[i, j] = 1 if i, j belongs to E
 
 ```python
@@ -126,5 +126,6 @@ print(AList)
 * simple cycle is a cycle when the only repeated vertices are the first vertex 4 - 8 - 9
 * A graph is acyclic if there is no cycle
 
-### **D**irected **A**cyclic **G**raphs(DAGa):
-* 
+### **D**irected **A**cyclic **G**raphs(DAGs):
+* G(V, E) is a DAG if it is a direcred graph with no directed cycles 
+* most real world problems can be put in DAGs
