@@ -47,3 +47,4 @@ class Point2:
 
     def distance2(self):
         return self.r
+
